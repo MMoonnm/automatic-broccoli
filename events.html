@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css" type="text/css">
+    <script src="https://kit.fontawesome.com/0ebff63666.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-----BANNER AND NAVBAR----->
+<div class="banner">
+    <nav>
+       <a href="index.html" class="logo">YWN</a>
+       <div class="navbar" id="navBar">
+           <i class="fa fa-times" id="x-icon" onclick="hideMenu()"></i>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="collections.html">Collection</a></li>
+               <li><a href="events.html">Events</a></li>
+               <li><a href="#">Services</a></li>
+           </ul>
+       </div>
+           <i class="fa fa-bars" id="bars-icon" onclick="showMenu()"></i>
+   </nav>
+</div>
+<!-----TITLE----->
+<section>
+    <div class="title">
+        <h2>EVENTS</h2>
+    </div>
+</section>
+
+<!--EVENTS-->
+<section class="events">
+    <div class="events-box">
+        <div class="events-img">
+            <img src="Images/event 1.jpg">
+        </div>
+        <div class="event-details">
+            <h4>2022 LA Auto Convention</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>31/04</h1>
+    </div>
+
+    <div class="events-box">
+        <div class="events-img">
+            <img src="Images/event 2.jpg">
+        </div>
+        <div class="event-details">
+            <h4>Auto Unveil</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>10/05</h1>
+    </div>
+
+    <div class="events-box">
+        <div class="events-img">
+            <img src="Images/event 3.jpg">
+        </div>
+        <div class="event-details">
+            <h4>F1 Opening</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>12/05</h1>
+    </div>
+
+    <div class="events-box">
+        <div class="events-img">
+            <img src="Images/event 4.jpg">
+        </div>
+        <div class="event-details">
+            <h4>May's Auto Convention</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>19/05</h1>
+    </div>
+</section>
+
+<!-----PAGINATION----->
+<section class="page">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+</section>
+
+<!-----FOOTER----->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Yeo Woon Nam</h4>
+                <ul>
+                    <li><a href="#">namywfx08198</a></li>
+                    <li><a href="#">WEB101x</a></li>
+                    <li><a href="#">Project 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">company policy</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">payment options</a></li>
+                    <li><a href="#">order status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!----STICKY NAVBAR ON SCROLL (PC) JAVASCRIPT---->
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+
+<!----INTERACTIVE NAVBAR (MOBILE) JAVASCRIPT---->
+<script>
+    var navbar = document.getElementById("navBar");
+    function showMenu(){
+        navBar.style.right = "0";
+    }
+    function hideMenu(){
+        navBar.style.right = "-300px";
+    }
+</script>
+</body>
+</html>

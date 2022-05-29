@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="terzo.css" type="text/css">
+    <script src="https://kit.fontawesome.com/0ebff63666.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-----BANNER AND NAVBAR----->
+<div class="banner">
+    <nav>
+        <a href="index.html" class="logo">YWN</a>
+        <div class="navbar" id="navBar">
+            <i class="fa fa-times" id="x-icon" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bars" id="bars-icon" onclick="showMenu()"></i>
+    </nav>
+</div>
+
+<!--BLANK-->
+<section class="blank"></section>
+
+<!-----TERZO----->
+<section class="terzo">
+    <div class="lg-img">
+        <img src="Images/terzo.jpg" width="100%" id="MainImg">
+
+        <div class="sm-img-gr">
+            <div class="sm-img-col">
+                <img src="Images/terzo.jpg" width="100%" class="sm-img">
+            </div>
+            <div class="sm-img-col">
+                <img src="Images/terzo 2.jpg" width="100%" class="sm-img">
+            </div>
+            <div class="sm-img-col">
+                <img src="Images/terzo 3.jpg" width="100%" class="sm-img">
+            </div>
+            <div class="sm-img-col">
+                <img src="Images/terzo 4.jpg" width="100%" class="sm-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="terzo-detail">
+        <h6>Home / Collections</h6>
+        <h4>Terzo Millennio</h4>
+        <h2>$2,500,000</h2>
+        <button>Order</button>
+        <h4>Auto Details</h4>
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries
+        </span>
+    </div>
+</section>
+
+<!-----RELATED----->
+<div class="products-container">
+    <div class="products">
+        <h2>Related Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Images/related.jpg">
+            <h4>Lamborghini Aventador S V12</h4>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 4.jpg">
+            <h4>Lamborghini Centenario LP 770-4</h4>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 2.jpg">
+            <h4>Lamborghini Aventador SVJ 2019</h4>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 3.jpg">
+            <h4>Lamborghini Huracán EVO 2019</h4>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-----FOOTER----->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Yeo Woon Nam</h4>
+                <ul>
+                    <li><a href="#">namywfx08198</a></li>
+                    <li><a href="#">WEB101x</a></li>
+                    <li><a href="#">Project 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">company policy</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">payment options</a></li>
+                    <li><a href="#">order status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----PRODUCT INTERACTION JAVASCRIPT---->
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("sm-img");
+    
+    smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src;
+    }
+</script>
+
+<!----STICKY NAVBAR ON SCROLL (PC) JAVASCRIPT---->
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+<!----INTERACTIVE NAVBAR (MOBILE) JAVASCRIPT---->
+    <script>
+        var navbar = document.getElementById("navBar");
+        function showMenu(){
+            navBar.style.right = "0";
+        }
+        function hideMenu(){
+            navBar.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>

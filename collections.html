@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collections.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/0ebff63666.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-----BANNER AND NAVBAR----->
+<div class="banner">
+    <nav>
+        <a href="index.html" class="logo">YWN</a>
+        <div class="navbar" id="navBar">
+            <i class="fa fa-times" id="x-icon" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bars" id="bars-icon" onclick="showMenu()"></i>
+    </nav>
+</div>
+
+<!-----CAROUSEL----->
+<div class="container">
+    <!-----Slider main container----->
+  <div class="swiper">
+    <!-----Additional required wrapper----->
+    <div class="swiper-wrapper">
+      <!-----Slides----->
+      <div class="swiper-slide"><img src="Images/slider.jpg"></div>
+      <div class="swiper-slide"><img src="Images/slider 2.jpg"></div>
+      <div class="swiper-slide"><img src="Images/slider 3.jpg"></div>
+      <div class="swiper-slide"><img src="Images/slider 4.jpg"></div>
+      <div class="swiper-slide"><img src="Images/slider 5.jpg"></div>
+    </div>
+    <!-----Pagination----->
+    <div class="swiper-pagination"></div>
+  
+    <!-----Navigation buttons----->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<!-----NEW ENTRIES----->
+<div class="entry-container">
+    <div class="new-entries">
+        <div class="row">
+            <div class="col-3">
+                <img src="Images/new.jpg">
+            </div>
+            <div class="col-3">
+                <img src="Images/new 2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="Images/new 3.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----PRODUCTS----->
+<div class="products-container">
+    <div class="products">
+        <h2>New Entries</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Images/product.jpg">
+            <a href="terzo.html"><h4>Lamborghini Terzo Millennio 2017</h4></a>
+            <p>$2,500,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 4.jpg">
+            <h4>Lamborghini Centenario LP 770-4</h4>
+            <p>$1,920,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 2.jpg">
+            <h4>Lamborghini Aventador SVJ 2019</h4>
+            <p>$517,770</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 3.jpg">
+            <h4>Lamborghini Huracán EVO 2019</h4>
+            <p>$206,485</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="Images/product 5.jpg">
+            <h4>Ferrari SP48 Unica</h4>
+            <p>$283,950</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 6.jpg">
+            <h4>Ferrari SF90 Spider</h4>
+            <p>$625,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 7.jpg">
+            <h4>Ferrari Roma</h4>
+            <p>$222,620</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 8.jpg">
+            <h4>Ferrari 488 GTB</h4>
+            <p>$262,800</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="Images/product 9.jpg">
+            <h4>Bugatti Veyron</h4>
+            <p>$1,900,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 10.jpg">
+            <h4>Bugatti Chiron</h4>
+            <p>$3,300,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 11.jpg">
+            <h4>Bugatti Divo</h4>
+            <p>$5,800,000</p>
+        </div>
+        <div class="col-4">
+            <img src="Images/product 12.jpg">
+            <h4>Bugatti Centodieci</h4>
+            <p>$4,400,000</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<!-----EVENT----->
+<div class="event">
+    <div class="event-container">
+        <h1>Back in Black</h1>
+        <div class="row-event">
+            <div class="text">
+                <h3>La Voiture Noire</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----FOOTER----->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Yeo Woon Nam</h4>
+                <ul>
+                    <li><a href="#">namywfx08198</a></li>
+                    <li><a href="#">WEB101x</a></li>
+                    <li><a href="#">Project 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">company policy</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">payment options</a></li>
+                    <li><a href="#">order status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-----CAROUSEL JAVASCRIPT----->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+
+<!----STICKY NAVBAR ON SCROLL (PC) JAVASCRIPT---->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+<!----INTERACTIVE NAVBAR (MOBILE) JAVASCRIPT---->
+    <script>
+        var navbar = document.getElementById("navBar");
+        function showMenu(){
+            navBar.style.right = "0";
+        }
+        function hideMenu(){
+            navBar.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>
